@@ -4,6 +4,7 @@ fun main(args: Array<String>) {
 
     maxOf(9, 12)
     listOfItems()
+    whenExpression(0)
 }
 
 fun maxOf(a: Int, b: Int){
@@ -30,6 +31,14 @@ fun listOfItems(){
     while(index < names.size){
         println("Name on index $index is ${names[index]} using while loop")
         index ++
+    }
+}
+
+fun whenExpression(obj: Any) {
+    when (obj){
+        0 -> "Zero"
+        "Kiosk" -> "String"
+        else -> "Nothing"
     }
 }
 
