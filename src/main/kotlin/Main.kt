@@ -1,8 +1,17 @@
 import basics.Functions
 
 fun main(args: Array<String>) {
-   val functions = Functions()
-    functions.printSum(18.2, 6.7)
-    println(functions.stringTemplates())
+
+    maxOf(9, 12)
+}
+
+fun maxOf(a: Int, b: Int){
+    if (a > b){
+        println("$a is greater than $b")
+    }
+
+    else {
+        println("$b is greater than $a")
+    }
 }
 
