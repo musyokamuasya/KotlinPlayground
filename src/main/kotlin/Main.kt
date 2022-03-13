@@ -1,10 +1,11 @@
 import basics.Functions
 
+
 fun main(args: Array<String>) {
 
     maxOf(9, 12)
     listOfItems()
-    whenExpression(0)
+
 }
 
 fun maxOf(a: Int, b: Int){
@@ -32,6 +33,11 @@ fun listOfItems(){
         println("Name on index $index is ${names[index]} using while loop")
         index ++
     }
+
+    names.filter { it.startsWith("K")}
+        .sortedBy { it }
+        .map { it.uppercase() }
+        .forEach{ println(it) }
 }
 
 fun whenExpression(obj: Any) {
@@ -41,6 +47,5 @@ fun whenExpression(obj: Any) {
         else -> "Nothing"
     }
 }
-
 
 
