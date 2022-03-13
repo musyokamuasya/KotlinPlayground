@@ -23,7 +23,13 @@ fun listOfItems(){
     }
 
     for(index in names.indices){
-        println("Name on index $index is ${names[index]}")
+        println("Name on index $index is ${names[index]} using for loop")
+    }
+
+    var index = 0;
+    while(index < names.size){
+        println("Name on index $index is ${names[index]} using while loop")
+        index ++
     }
 }
 
